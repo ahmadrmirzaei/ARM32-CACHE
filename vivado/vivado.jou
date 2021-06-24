@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jun 25 02:43:06 2021
+# Process ID: 5536
+# Current directory: D:/Ripositories/ARM32_CACHE
+# Command line: vivado.exe -mode batch -source vivado/vivado.tcl -tempDir vivado -log vivado/vivado.log -jou vivado/vivado.jou
+# Log file: D:/Ripositories/ARM32_CACHE/vivado/vivado.log
+# Journal file: D:/Ripositories/ARM32_CACHE\vivado/vivado.jou
+#-----------------------------------------------------------
+source vivado/vivado.tcl

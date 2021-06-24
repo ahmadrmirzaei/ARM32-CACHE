@@ -1,0 +1,5 @@
+sram__GB0
+sram__GB1
+sram__GB2
+mem__GC0
+dataPath__GC0

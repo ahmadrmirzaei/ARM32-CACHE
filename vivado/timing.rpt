@@ -1,0 +1,82 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Jun 25 02:46:51 2021
+| Host         : DESKTOP-LQ4E1T9 running 64-bit major release  (build 9200)
+| Command      : report_timing -file ./vivado/timing.rpt
+| Design       : dataPath
+| Device       : 7vx485t-ffg1157
+| Speed File   : -1  PRODUCTION 1.12 2014-09-11
+------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 FWRD_EN
+                            (input port)
+  Destination:            EXE/sr/status_bits_out_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.604ns  (logic 2.888ns (33.562%)  route 5.717ns (66.438%))
+  Logic Levels:           21  (CARRY4=8 IBUF=1 LUT2=1 LUT4=1 LUT6=10)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  FWRD_EN (IN)
+                         net (fo=0)                   0.000     0.000    FWRD_EN
+                         IBUF (Prop_ibuf_I_O)         0.726     0.726 r  FWRD_EN_IBUF_inst/O
+                         net (fo=37, unplaced)        0.584     1.309    MEM/pr_mem_wb/FWRD_EN_IBUF
+                         LUT4 (Prop_lut4_I0_O)        0.053     1.362 f  MEM/pr_mem_wb/VAL_RM_MEM[31]_i_6/O
+                         net (fo=1, unplaced)         0.340     1.702    EXE/pr_exe_mem/VAL_RM_MEM_reg[0]_3
+                         LUT6 (Prop_lut6_I5_O)        0.053     1.755 r  EXE/pr_exe_mem/VAL_RM_MEM[31]_i_2/O
+                         net (fo=105, unplaced)       0.441     2.196    EXE/v2g/i_/ALU_RES_MEM[2]_i_10_0
+                         LUT6 (Prop_lut6_I3_O)        0.053     2.249 r  EXE/v2g/i_/ALU_RES_MEM[3]_i_13/O
+                         net (fo=2, unplaced)         0.532     2.781    EXE/v2g/i_/ALU_RES_MEM[3]_i_13_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.053     2.834 r  EXE/v2g/i_/ALU_RES_MEM[1]_i_7/O
+                         net (fo=1, unplaced)         0.521     3.355    EXE/v2g/i_/ALU_RES_MEM[1]_i_7_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.053     3.408 r  EXE/v2g/i_/ALU_RES_MEM[1]_i_4/O
+                         net (fo=2, unplaced)         0.351     3.759    EXE/v2g/shifter_operand_EXE_reg[11]_10
+                         LUT6 (Prop_lut6_I5_O)        0.053     3.812 r  EXE/v2g/i_/ALU_RES_MEM[1]_i_2/O
+                         net (fo=10, unplaced)        0.383     4.195    ID/pr_id_exe/val2[1]
+                         LUT2 (Prop_lut2_I1_O)        0.053     4.248 r  ID/pr_id_exe/i__carry_i_7__1/O
+                         net (fo=1, unplaced)         0.000     4.248    EXE/alu/S[1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.324     4.572 r  EXE/alu/tmp0_inferred__3/i__carry/CO[3]
+                         net (fo=1, unplaced)         0.008     4.580    EXE/alu/tmp0_inferred__3/i__carry_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.058     4.638 r  EXE/alu/tmp0_inferred__3/i__carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     4.638    EXE/alu/tmp0_inferred__3/i__carry__0_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.058     4.696 r  EXE/alu/tmp0_inferred__3/i__carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.696    EXE/alu/tmp0_inferred__3/i__carry__1_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.058     4.754 r  EXE/alu/tmp0_inferred__3/i__carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     4.754    EXE/alu/tmp0_inferred__3/i__carry__2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.058     4.812 r  EXE/alu/tmp0_inferred__3/i__carry__3/CO[3]
+                         net (fo=1, unplaced)         0.000     4.812    EXE/alu/tmp0_inferred__3/i__carry__3_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.220     5.032 r  EXE/alu/tmp0_inferred__3/i__carry__4/O[1]
+                         net (fo=3, unplaced)         0.523     5.555    EXE/alu/rn_val_EXE_reg[23][1]
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.474     6.029 r  EXE/alu/ALU_RES_MEM_reg[21]_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     6.029    EXE/alu/ALU_RES_MEM_reg[21]_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.187     6.216 f  EXE/alu/status_bits_out_reg[0]_i_5/O[3]
+                         net (fo=2, unplaced)         0.674     6.890    EXE/alu/tmp0_inferred__3/i__carry__5_0[3]
+                         LUT6 (Prop_lut6_I1_O)        0.142     7.032 f  EXE/alu/status_bits_out[2]_i_71/O
+                         net (fo=1, unplaced)         0.340     7.372    EXE/alu/status_bits_out[2]_i_71_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.053     7.425 f  EXE/alu/status_bits_out[2]_i_30/O
+                         net (fo=1, unplaced)         0.340     7.765    EXE/alu/status_bits_out[2]_i_30_n_0
+                         LUT6 (Prop_lut6_I4_O)        0.053     7.818 f  EXE/alu/status_bits_out[2]_i_10/O
+                         net (fo=1, unplaced)         0.340     8.158    ID/pr_id_exe/status_bits_out_reg[2]
+                         LUT6 (Prop_lut6_I5_O)        0.053     8.211 r  ID/pr_id_exe/status_bits_out[2]_i_2/O
+                         net (fo=1, unplaced)         0.340     8.551    ID/pr_id_exe/status_bits_out[2]_i_2_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.053     8.604 r  ID/pr_id_exe/status_bits_out[2]_i_1/O
+                         net (fo=1, unplaced)         0.000     8.604    EXE/sr/D[2]
+                         FDCE                                         r  EXE/sr/status_bits_out_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
